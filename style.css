@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(189, 189, 189);
+    width: 1000px;
+    margin: auto;
+}
+h1 {
+    margin-top: 15px;
+    margin-left: 10px;
+    color: rgb(189, 189, 189);
+
+}
+h3 {
+    text-align: center;
+    color: rgb(189, 189, 189);
+}
+.header {
+    background-color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    display: block;
+}
+.img-header {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+.main {
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    flex-wrap: wrap
+    
+}
+.footer {
+    background-color: rgb(0, 0, 0);
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+.footer-menu {
+    display: flex;
+}
+.Footer-ul {
+    display:inline ;
+    padding: 0;
+    justify-content:right;
+}
+.footer-li {
+    list-style: none;
+    padding: 10px;
+}
+.footer-li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(189, 189, 189);
+    position: relative;
+    padding: 5px;
+}
+.dws-menu{
+    background-color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 25px;
+    width: 100%;
+   }
+   ul.dws-ul{
+    display:inline-table;
+    padding: 0;
+    justify-content:right;
+   }
+   li.dws-li{
+    list-style: none;
+    padding: 10px;
+   }
+   li.dws-li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(189, 189, 189);
+    position: relative;
+    padding: 5px;
+   }
+
+   li.dws-li a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+   }
+   li.dws-li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #bebebe;
+    position: absolute;
+    top: 90%;
+    right: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+   }
+   li.dws-li:hover{
+    background-color: #8d8d8d;
+   }
+   li.dws-li:hover a::before{
+    width: 50%;
+    transform: translateX(100%);
+   }
+   li.dws-li:hover a::after{
+    width: 50%;
+    transform: translateX(-100%);
+   }
+   li.dws-li a:hover{
+    color: #000000;
+   }
